@@ -27,20 +27,15 @@
 #         return []
 
 from typing import Any, Text, Dict, List
-from rasa_sdk import Action
-from rasa_sdk.events import SlotSet
+from rasa_sdk import Action, Tracker
+from rasa_sdk.executor import CollectingDispatcher
 
-class ActionProvideFinanceEducation(Action):
+class ActionCheckBalance(Action):
     def name(self) -> Text:
-        return "action_provide_finance_education"
+        return "action_check_balance"
 
-    def run(self, dispatcher, tracker, domain) -> List[Dict[Text, Any]]:
-        user_lang = tracker.get_slot("language") or "en"
-        
-        messages = {
-            "en": "Financial planning involves budgeting, saving, and investing. What would you like to know more about?",
-            "hi": "वित्तीय योजना में बजट, बचत और निवेश शामिल हैं। आप किसके बारे में अधिक जानना चाहेंगे?",
-            "ta": "நிதி திட்டமிடல் என்பது திட்டமிடல், சேமிப்பு மற்றும் முதலீட்டை உள்ளடக்கியது. மேலும் எதைப் பற்றி அறிய விரும்புகிறீர்கள்?",
-        }
-        dispatcher.utter_message(text=messages.get(user_lang, messages["en"]))
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        # Example custom logic
+        account_balance = "$1,500"
+        dispatcher.utter_message(text=f"Your account balance is {account_balance}.")
         return []

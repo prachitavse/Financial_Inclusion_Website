@@ -50,20 +50,16 @@
 #     constrain_similarities: true
 
 language: en
-
 pipeline:
   - name: WhitespaceTokenizer
-  - name: LanguageModelFeaturizer
-    model_name: "bert"
+  - name: RegexFeaturizer
+  - name: LexicalSyntacticFeaturizer
+  - name: CountVectorsFeaturizer
   - name: DIETClassifier
     epochs: 100
-  - name: FallbackClassifier
-    threshold: 0.3
-  - name: LanguageDetector  # Add a language detector if needed
-
 policies:
   - name: MemoizationPolicy
-  - name: RulePolicy
   - name: TEDPolicy
     max_history: 5
     epochs: 100
+  - name: RulePolicy
