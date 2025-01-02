@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import Message from './messageessage';
-import { sendMessageToChatbot } from '../services/chatbotService';
-import './ChatBox.css';
+import Message from './message';
+import { sendMessageToChatbot } from '../../services/chatbotService';
+import '../../styles/chatbox.css';
 
 function ChatBox() {
   const [messages, setMessages] = useState([]);

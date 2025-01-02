@@ -1,6 +1,5 @@
 import React from 'react';
-import './ChatBox.css';
-
+import '../../styles/chatbox.css';
 function Message({ text, sender }) {
   const isUser = sender === 'User';
 
