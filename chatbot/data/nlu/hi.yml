@@ -1,0 +1,19 @@
+version: "3.1"
+nlu:
+  - intent: greet
+    examples: |
+      - नमस्ते
+      - हाय
+      - हेलो
+
+  - intent: goodbye
+    examples: |
+      - अलविदा
+      - बाय
+      - फिर मिलेंगे
+
+  - intent: learn_finance
+    examples: |
+      - मुझे निवेश के बारे में बताओ
+      - पैसे कैसे बचाएं?
+      - वित्तीय योजना के बारे में जानकारी दें

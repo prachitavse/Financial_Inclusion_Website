@@ -1,0 +1,19 @@
+version: "3.1"
+nlu:
+  - intent: greet
+    examples: |
+      - Hello
+      - Hi
+      - Hey there
+
+  - intent: goodbye
+    examples: |
+      - Goodbye
+      - Bye
+      - See you later
+
+  - intent: learn_finance
+    examples: |
+      - I want to learn about investments
+      - How can I save money?
+      - Tell me about financial planning
