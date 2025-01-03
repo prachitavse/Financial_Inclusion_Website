@@ -24,6 +24,7 @@ function ChatBox() {
     setInput('');
 };
 
+
 return (
   <div className="chatbox">
     <div className="chatbox-messages">
