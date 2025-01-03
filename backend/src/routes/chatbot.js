@@ -3,7 +3,7 @@ const { sendMessageToChatbot } = require('../controllers/chatbotController');
 
 const router = express.Router();
 
-router.post('/chat', sendMessageToChatbot);
+router.post('/api/chat', sendMessageToChatbot);
 
 module.exports = router;
 

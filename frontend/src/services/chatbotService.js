@@ -1,7 +1,12 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:3001/api/chat';
-
-export const sendMessageToChatbot = (message) => {
-  return axios.post(API_URL, { message });
+export const sendMessageToChatbot = async (message) => {
+  try {
+    const response = await axios.post('http://localhost:3001/api/chat', { message });
+    return response;
+  } catch (error) {
+    console.error('Error:', error);
+    throw error;
+  }
 };
+
