@@ -1,9 +1,21 @@
 version: "3.1"
 stories:
-  - story: greet and learn finance
+  # - story: greet and learn finance (investment)
+  #   steps:
+  #     - intent: greet
+  #     - action: utter_greet
+  #     - intent: learn_finance
+  #     - action: action_provide_finance_education  # Learning about investments
+
+  - story: greet and learn finance (saving money)
     steps:
       - intent: greet
       - action: utter_greet
       - intent: learn_finance
-      - action: action_provide_finance_education
+      - action: utter_save_money_tips  # Tips on saving money
+
+  - story: Goodbye interaction
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
 
