@@ -1,15 +1,19 @@
 version: "3.1"
 intents:
   - greet
-  - goodbye
   - learn_finance
+  - goodbye
 
 responses:
   utter_greet:
     - text: "Hello! How can I assist you today?"
-    - text: "नमस्ते! मैं आपकी किस प्रकार मदद कर सकता हूं?"
-    - text: "வணக்கம்! உங்களுக்கு எப்படி உதவ முடியும்?"
+
+  utter_save_money_tips:
+    - text: "Here are some ways you can save money: Start budgeting, reduce unnecessary expenses, save on utilities, and avoid impulse purchases. Would you like more detailed advice?"
+
+  utter_goodbye:
+    - text: "Goodbye! Have a great day!"
 
 actions:
-  - action_provide_finance_education
+  - action_provide_finance_education  # If you need this, keep it
 
