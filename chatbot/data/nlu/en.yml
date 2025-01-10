@@ -4,16 +4,53 @@ nlu:
     examples: |
       - Hello
       - Hi
-      - Hey there
+      - Hey
 
   - intent: goodbye
     examples: |
-      - Goodbye
       - Bye
+      - Goodbye
       - See you later
 
-  - intent: learn_finance
+  - intent: learn_about_sakhi_sangam
     examples: |
-      - I want to learn about investments
-      - How can I save money?
-      - Tell me about financial planning
+      - What is Sakhi Sangam?
+      - Tell me about Sakhi Sangam
+      - What is the mission of Sakhi Sangam?
+      - What does Sakhi Sangam do?
+      - Where is Sakhi Sangam located?
+
+  - intent: services_of_sakhi_sangam
+    examples: |
+      - What services does Sakhi Sangam offer?
+      - How can I get help from Sakhi Sangam?
+      - What are the services provided by Sakhi Sangam?
+
+  - intent: contact_info_sakhi_sangam
+    examples: |
+      - How can I contact Sakhi Sangam?
+      - What is the contact number for Sakhi Sangam?
+      - Where is Sakhi Sangam located?
+
+  - intent: website_info_sakhi_sangam
+    examples: |
+      - What is the website of Sakhi Sangam?
+      - Where can I find more information about Sakhi Sangam online?
+
+  # New intents related to basic finance knowledge
+  - intent: learn_basic_finance_knowledge
+    examples: |
+      - What is personal finance?
+      - Tell me about basic finance concepts
+      - What is budgeting?
+      - What is an investment?
+      - Explain financial planning
+      - What are savings and investments?
+      - What is credit?
+
+  - intent: learn_investment_strategies
+    examples: |
+      - What are some good investment strategies?
+      - How can I start investing?
+      - What is a good way to invest my money?
+      - Tell me about stock market investments
