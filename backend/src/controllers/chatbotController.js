@@ -13,3 +13,14 @@ exports.sendMessageToChatbot = async (req, res) => {
     res.status(500).send('Internal Server Error');
   }
 };
+exports.handleChat = async (req, res) => {
+  try {
+    const message = req.body.message;
+    // Process the message, interact with the chatbot, and send the response
+    const chatbotResponse = await someChatbotAPI(message); // Replace with your actual chatbot API call
+    res.json({ response: chatbotResponse });
+  } catch (error) {
+    console.error('Error processing chat request:', error);
+    res.status(500).send('Internal server error');
+  }
+};

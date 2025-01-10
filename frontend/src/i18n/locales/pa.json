@@ -1,0 +1,122 @@
+{
+    "HomeSection": {
+      "title": "ਉਸ ਦੀਆਂ ਮਾਲੀਆਂ ਨੂੰ ਮਜ਼ਬੂਤ ਕਰੋ, ਉਸਦਾ ਭਵਿੱਖ ਮਜ਼ਬੂਤ ਕਰੋ।",
+      "description": "<b>ਸਖੀ ਸੰਗਮ</b> ਵਿਚ ਤੁਹਾਡਾ ਸਵਾਗਤ ਹੈ, ਪਿੰਡਾਂ ਦੀਆਂ ਔਰਤਾਂ ਨੂੰ ਵਿੱਤੀ ਸੁਤੰਤਰਤਾ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ ਸਮਰਪਿਤ AI-ਚਲਾਇਆ ਪਲੇਟਫਾਰਮ। ਅਸੀਂ ਵਿੱਤੀ ਦੁਨੀਆ ਨੂੰ ਸੌਖੀ ਅਤੇ ਪਹੁੰਚਯੋਗ ਬਣਾਉਣ ਲਈ ਸਾਧਨ ਅਤੇ ਸਰੋਤ ਪ੍ਰਦਾਨ ਕਰਦੇ ਹਾਂ।",
+      "features": {
+        "learn": "ਸਮਾਰਟ ਤਰੀਕੇ ਨਾਲ ਸਿੱਖੋ: ਸਥਾਨਕ ਭਾਸ਼ਾਵਾਂ ਵਿੱਚ ਗੇਮੀਫਾਈਡ ਪਾਠ।",
+        "plan": "ਵਧੀਆ ਯੋਜਨਾ ਬਣਾਓ: ਬਜਟਿੰਗ ਅਤੇ ਲਕਸ਼ਅਧਾਰਿਤ ਯੋਜਨਾਬੰਦੀ ਲਈ AI ਸਾਧਨ।",
+        "support": "ਸਹਾਇਤਾ ਲੱਭੋ: ਮਾਰਗਦਰਸ਼ਕਾਂ ਅਤੇ ਪ੍ਰੇਰਣਾਦਾਇਕ ਉਦਮੀਆਂ ਨਾਲ ਜੁੜੋ।",
+        "accessible": "ਪਹੁੰਚਯੋਗ ਰਹੋ: 24/7 ਚੈਟਬਾਟ ਅਤੇ ਕਿਸੇ ਵੀ ਸਮੇਂ ਸਿੱਖਣ ਲਈ ਆਫਲਾਈਨ ਸੁਵਿਧਾ।"
+      }
+    },
+    "LearningPage": {
+      "selectOption": "ਚੋਣ ਵਿਕਲਪ",
+      "options": {
+        "budgeting": "ਬਜਟਿੰਗ",
+        "savings": "ਬਚਤ",
+        "investment": "ਨਿਵੇਸ਼"
+      },
+      "tags": {
+        "savings": "ਐਸ-1",
+        "financialPlanning": "ਐੱਫਪੀ-1",
+        "loan": "ਐੱਲ-1"
+      },
+      "lessons": {
+        "savingsGuide": "ਬਚਤ ਲਈ ਸ਼ੁਰੂਆਤੀ ਗਾਈਡ",
+        "startLesson": "ਪਾਠ ਸ਼ੁਰੂ ਕਰੋ",
+        "savingsDesc": "ਬਚਤ ਗਾਈਡ",
+        "financialPlanning": "ਪਰਿਵਾਰਾਂ ਲਈ ਵਿੱਤੀ ਯੋਜਨਾ",
+        "loanManagement": "ਕਰਜ਼ਾ ਪ੍ਰਬੰਧਨ"
+      },
+      "language": "ਭਾਸ਼ਾ"
+    },
+    "BudgetingPage":{
+      "budgeting_service": "ਬਜਟ ਸੇਵਾ",
+      "monthly_income": "ਮਹੀਨਾਵਾਰੀ ਆਮਦਨ",
+      "monthly_savings": "ਮਹੀਨਾਵਾਰੀ ਬਚਤ",
+      "monthly_expenses": "ਮਹੀਨਾਵਾਰੀ ਖਰਚ",
+      "travel": "ਸਫਰ",
+      "commute": "ਆਵਾਜਾਈ",
+      "personal": "ਨਿੱਜੀ",
+      "education": "ਸਿੱਖਿਆ",
+      "seasonal": "ਮੌਸਮੀ",
+      "loans": "ਕਰਜ਼ਾ",
+      "goals": "ਲਕੜੀ",
+      "submit": "ਜਮਾਂ ਕਰੋ",
+      "analysis_of_your_budget": "ਤੁਹਾਡੇ ਬਜਟ ਦਾ ਵਿਸ਼ਲੇਸ਼ਣ",
+      "out_of_budget_message": "ਇਹ ਬਜਟ ਤੋਂ ਬਾਹਰ ਹੈ",
+      "total_expenses":"ਕੁੱਲ ਖਰਚ",
+      "savings": "ਬਚਤ",
+      "investment_suggestions": "ਨਿਵੇਸ਼ ਸਿਫਾਰਿਸ਼ਾਂ",
+      "please_fill_form_first": "ਕਿਰਪਾ ਕਰਕੇ ਪਹਿਲਾਂ ਫਾਰਮ ਭਰੋ!",
+      "language": "ਭਾਸ਼ਾ"
+    },
+    "QuizPage": {
+    "selectOption": "ਵਿਕਲਪ ਚੁਣੋ",
+    "options": {
+      "budgeting": "ਬਜਟਿੰਗ",
+      "savings": "ਬਚਤ",
+      "investment": "ਨਿਵੇਸ਼"
+    },
+    "tags": {
+      "Q-1": "Q-1",
+      "Q-2": "Q-2",
+      "Q-3": "Q-3"
+    },
+    "lessons": {
+      "basicBudgetingQuiz": "ਬੁਨਿਆਦੀ ਬਜਟਿੰਗ ਕੁਇਜ਼",
+      "savingsStrategiesQuiz": "ਬਚਤ ਰਣਨੀਤੀਆਂ ਕੁਇਜ਼",
+      "investmentQuiz": "ਨਿਵੇਸ਼ ਕੁਇਜ਼"
+    },
+    "language": "ਭਾਸ਼ਾ",
+    "playButton": "ਖੇਡੋ"
+  },
+  "UserProfile": {
+    "profilePageTitle": "ਪ੍ਰੋਫਾਈਲ ਪੇਜ਼",
+    "editButton": "ਸੰਪਾਦਿਤ ਕਰੋ",
+    "saveButton": "ਸੇਵ ਕਰੋ",
+    "rank": "ਰੈਂਕ",
+    "points": "ਪੁਆਇੰਟ",
+    "quizzesCompleted": "ਪੂਰੇ ਕੀਤੇ ਗਏ ਕੁਇਜ਼",
+    "badgesEarned": "ਹਾਸਲ ਕੀਤੇ ਗਏ ਬੈਜ",
+    "courseProgressTitle": "ਕੋਰਸ ਪ੍ਰਗਤੀ",
+    "coursesCompleted": "ਪੂਰੇ ਕੀਤੇ ਕੋਰਸ",
+    "ongoingCourse": "ਚੱਲ ਰਹਾ ਕੋਰਸ"
+  },
+  "Navbar": {
+    "logoAlt": "ਸਖੀ ਸੰਗਮ ਲੋਗੋ",
+    "home": "ਮੁੱਖ ਪੇਜ਼",
+    "learning": "ਸਿੱਖਣਾ",
+    "quizzesGames": "ਕੁਇਜ਼/ਖੇਡਾਂ",
+    "budgeting": "ਬਜਟ ਬਣਾਉਣਾ",
+    "findYourMentor": "ਆਪਣਾ ਮਾਰਗਦਰਸ਼ਕ ਲੱਭੋ",
+    "profile": "ਪ੍ਰੋਫਾਈਲ",
+    "profileAlt": "ਪ੍ਰੋਫਾਈਲ",
+    "logout": "ਲੌਗ ਆਉਟ",
+    "loginSignUp": "ਲੌਗਿਨ/ਸਾਇਨ ਅੱਪ"
+  },
+  "Login": {
+    "imageAlt": "ਕਮਿਊਨਟੀ",
+    "title": "ਲੌਗਿਨ",
+    "emailLabel": "ਈਮੇਲ",
+    "emailPlaceholder": "ਆਪਣਾ ਈਮੇਲ ਦਰਜ ਕਰੋ",
+    "passwordLabel": "ਪਾਸਵਰਡ",
+    "passwordPlaceholder": "ਆਪਣਾ ਪਾਸਵਰਡ ਦਰਜ ਕਰੋ",
+    "loginButton": "ਲੌਗਿਨ",
+    "signupLink": "ਖਾਤਾ ਬਣਾਓ",
+    "forgotPasswordLink": "ਪਾਸਵਰਡ ਭੁੱਲ ਗਏ?"
+  },
+  "SignUp": {
+    "imageAlt": "ਕਮਿਊਨਟੀ",
+    "title": "ਸਾਇਨ ਅਪ",
+    "emailLabel": "ਈਮੇਲ",
+    "emailPlaceholder": "ਆਪਣਾ ਈਮੇਲ ਦਰਜ ਕਰੋ",
+    "passwordLabel": "ਪਾਸਵਰਡ",
+    "passwordPlaceholder": "ਆਪਣਾ ਪਾਸਵਰਡ ਦਰਜ ਕਰੋ",
+    "confirmPasswordLabel": "ਪਾਸਵਰਡ ਦੀ ਪੁਸ਼ਟੀ ਕਰੋ",
+    "confirmPasswordPlaceholder": "ਆਪਣਾ ਪਾਸਵਰਡ ਮੁੜ ਦਰਜ ਕਰੋ",
+    "signUpButton": "ਸਾਇਨ ਅਪ",
+    "backToLoginLink": "ਵਾਪਸ ਲੌਗਿਨ ਤੇ ਜਾਓ"
+  } 
+  }
+  

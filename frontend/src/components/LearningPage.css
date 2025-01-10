@@ -1,0 +1,57 @@
+.learning-select {
+    margin: 20px;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .learning-options {
+    margin: 20px;
+  }
+  
+  .learning-item {
+    padding: 15px;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    background: #f9f9f9;
+  }
+
+  .learning-tag {
+    display: block;           /* Make the tag appear on a new line */
+    margin-bottom: 10px;      /* Add some space below the tag */
+  }
+  
+  
+  .learning-item-content {
+    display: flex;                 /* Use flexbox for heading and button */
+    justify-content: space-between; /* Align h2 on the left and button on the right */
+    align-items: center;           /* Vertically center elements */
+  }
+  
+  h2 {
+    margin: 0;
+    flex-grow: 1;             /* Take up available space */
+  }
+  .play-button {
+    padding: 5px 5px;
+    cursor: pointer;
+    height: 30px;             
+    width: 100px;
+    justify-content: center;  /* Center text inside the button */
+    align-items: center;
+    margin-left: auto;
+    background-color: black;
+    color: white;
+    border-radius: 40px;
+  }
+  
+  .active-link {
+    background-color: #fff;
+    color: #ff1493;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+
+  
+  
+  
+  

@@ -1,0 +1,27 @@
+.home-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: black;
+    height: 600px;
+  }
+  
+  .home-text {
+    flex: 1;
+    justify-items: left;
+    justify-content: left;
+  }
+  
+  .home-images {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end; /* Align images to the right */
+  }
+  
+  .home-images img {
+    width: 750px;
+    margin-bottom: -120px;
+    margin-right: -20px;
+  }
+  

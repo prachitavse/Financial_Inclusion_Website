@@ -1,0 +1,122 @@
+{
+    "HomeSection": {
+      "title": "तिच्या वित्त व्यवस्थेला सबल करा, तिच्या भविष्याला सबल करा.",
+      "description": "<b>सखी संगम</b> मध्ये तुमचं स्वागत आहे, ग्रामीण महिलांना आर्थिक स्वातंत्र्य मिळवून देण्यासाठी समर्पित एआय-आधारित व्यासपीठ. आम्ही वित्तीय क्षेत्र सुलभ आणि वापरण्यास सोपं करण्यासाठी साधने आणि संसाधने उपलब्ध करतो.",
+      "features": {
+        "learn": "स्मार्टपणे शिका: स्थानिक भाषांमधील गेमिफाइड धडे.",
+        "plan": "चांगल्या योजना करा: बजेटिंग आणि लक्ष्य आधारित नियोजनासाठी एआय साधने.",
+        "support": "सहाय्यता मिळवा: मार्गदर्शक आणि प्रेरणादायक उद्योजकांशी जोडा.",
+        "accessible": "सुलभता ठेवा: 24/7 चॅटबॉट आणि कोणत्याही वेळी शिक्षणासाठी ऑफलाइन कार्यक्षमता."
+      }
+    },
+    "LearningPage": {
+      "selectOption": "पर्याय निवडा",
+      "options": {
+        "budgeting": "बजेट",
+        "savings": "बचत",
+        "investment": "गुंतवणूक"
+      },
+      "tags": {
+        "savings": "एस-1",
+        "financialPlanning": "एफपी-1",
+        "loan": "एल-1"
+      },
+      "lessons": {
+        "savingsGuide": "बचतीसाठी सुरुवातीचे मार्गदर्शन",
+        "startLesson": "धडा सुरू करा",
+        "savingsDesc": "बचत मार्गदर्शन",
+        "financialPlanning": "कुटुंबांसाठी आर्थिक नियोजन",
+        "loanManagement": "कर्ज व्यवस्थापन"
+      },
+      "language": "भाषा"
+    },
+    "BudgetingPage":{
+      "budgeting_service": "बजेट सेवा",
+      "monthly_income": "महिन्याची उत्पन्न",
+      "monthly_savings": "महिन्याची बचत",
+      "monthly_expenses": "महिन्याचे खर्च",
+      "travel": "प्रवास",
+      "commute": "प्रवासी",
+      "personal": "वैयक्तिक",
+      "education": "शिक्षण",
+      "seasonal": "हंगामी",
+      "loans": "कर्ज",
+      "goals": "लक्ष्य",
+      "submit": "सबमिट करा",
+      "analysis_of_your_budget": "तुमच्या बजेटचे विश्लेषण",
+      "out_of_budget_message": "हे बजेटच्या बाहेर आहे",
+      "total_expenses":"एकूण खर्च",
+      "savings": "बचत",
+      "investment_suggestions": "निवेश सल्ले",
+      "please_fill_form_first": "कृपया पहिले फॉर्म भरा!",
+      "language": "भाषा"
+    } ,
+    "QuizPage": {
+    "selectOption": "विकल्प निवडा",
+    "options": {
+      "budgeting": "बजेटिंग",
+      "savings": "संचय",
+      "investment": "निवेश"
+    },
+    "tags": {
+      "Q-1": "Q-1",
+      "Q-2": "Q-2",
+      "Q-3": "Q-3"
+    },
+    "lessons": {
+      "basicBudgetingQuiz": "मूलभूत बजेटिंग क्विझ",
+      "savingsStrategiesQuiz": "संचय धोरण क्विझ",
+      "investmentQuiz": "निवेश क्विझ"
+    },
+    "language": "भाषा",
+    "playButton": "खेळा"
+  },
+  "UserProfile": {
+    "profilePageTitle": "प्रोफाइल पृष्ठ",
+    "editButton": "संपादित करा",
+    "saveButton": "जतन करा",
+    "rank": "रँक",
+    "points": "पॉईंट्स",
+    "quizzesCompleted": "पूर्ण केलेले क्विझ",
+    "badgesEarned": "प्राप्त बॅज",
+    "courseProgressTitle": "कोर्स प्रगती",
+    "coursesCompleted": "पूर्ण केलेले कोर्स",
+    "ongoingCourse": "सध्याचे कोर्स"
+  },
+  "Navbar": {
+    "logoAlt": "सखी संगम लोगो",
+    "home": "मुख्यपृष्ठ",
+    "learning": "शिकणे",
+    "quizzesGames": "क्विझ/खेळ",
+    "budgeting": "अर्थसंकल्प",
+    "findYourMentor": "तुमचा मार्गदर्शक शोधा",
+    "profile": "प्रोफाइल",
+    "profileAlt": "प्रोफाइल",
+    "logout": "लॉगआउट",
+    "loginSignUp": "लॉगिन/साइन अप"
+  },
+  "Login": {
+    "imageAlt": "समुदाय",
+    "title": "लॉगिन",
+    "emailLabel": "ईमेल",
+    "emailPlaceholder": "तुमचा ईमेल प्रविष्ट करा",
+    "passwordLabel": "पासवर्ड",
+    "passwordPlaceholder": "तुमचा पासवर्ड प्रविष्ट करा",
+    "loginButton": "लॉगिन",
+    "signupLink": "खाते तयार करा",
+    "forgotPasswordLink": "पासवर्ड विसरलात?"
+  },
+  "SignUp": {
+    "imageAlt": "समुदाय",
+    "title": "साइन अप करा",
+    "emailLabel": "ईमेल",
+    "emailPlaceholder": "तुमचा ईमेल प्रविष्ट करा",
+    "passwordLabel": "पासवर्ड",
+    "passwordPlaceholder": "तुमचा पासवर्ड प्रविष्ट करा",
+    "confirmPasswordLabel": "पासवर्डची पुष्टी करा",
+    "confirmPasswordPlaceholder": "तुमचा पासवर्ड पुन्हा प्रविष्ट करा",
+    "signUpButton": "साइन अप करा",
+    "backToLoginLink": "लॉगिनवर परत जा"
+  }   
+  }
+  

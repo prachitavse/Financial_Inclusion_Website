@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -36,3 +36,72 @@
     transform: rotate(360deg);
   }
 }
+ */
+ body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: linear-gradient(white, pink);
+}
+div .languageToggleContainer{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+  margin-right: 20px;
+  z-index: 101;
+}
+.language-overlay {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  background-color: #f70988;
+  border: 1px solid white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  padding-top: 30px;
+  z-index: 1000;
+  width: 500px;
+  height: 350px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two equal columns for buttons */
+  gap: 1px;
+  justify-items: center; /* Center buttons horizontally in each grid cell */
+  align-items: center; /* Center content vertically */
+}
+
+/* Close Button Styling */
+.close-overlay {
+  position: absolute;
+  top: 0px; /* Distance from the top of the overlay */
+  right: 0px; /* Distance from the right of the overlay */
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1010;
+}
+
+.close-overlay img {
+  width: 40px; /* Adjust size of the close button */
+  height: 40px;
+  border-radius: 50%;
+}
+
+.language-overlay .langbutton {
+  background-color: white; /* White background for buttons */
+  color: #ff1493; /* Pink text for buttons */
+  border: 1px solid #ff1493; /* Pink border */
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold; /* Make the text stand out */
+  width: 200px;
+  height: 80px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.language-overlay .langbutton:hover {
+  background-color: #ff1493; /* Pink background on hover */
+  color: white; /* White text on hover */
+}
+

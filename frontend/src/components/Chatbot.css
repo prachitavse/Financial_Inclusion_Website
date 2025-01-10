@@ -1,0 +1,171 @@
+.chatbot-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.chatbot-button {
+  border: none;
+  background: none;
+  width: 150px;
+  height: 106px;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.chatbot-button img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.chatbot-window {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(135deg, #ff9aca, #ffa6b9);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  bottom: 120px;
+  right: 80px;
+}
+
+.chatbot-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.chatbot-logo {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.close-chatbot {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.close-chatbot img{
+  width: 40px; /* Adjust size of the close button */
+  height: 40px;
+  border-radius: 50%;
+}
+
+.chatbot-body {
+  padding: 20px;
+  margin-top: -50px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+}
+
+.chatbot-footer {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+
+.chatbot-input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.send-button {
+  background-color: #ff5cac;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 8px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+
+/* Language Button Styling */
+.language-button {
+  background-color: white; /* White background for buttons */
+  color: #ff1493; /* Pink text for buttons */
+  border: 1px solid #ff1493; /* Pink border */
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold; /* Make the text stand out */
+  height: auto;
+  width: 100px;
+  align-self: end;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.language-button:hover {
+  background-color: #ff1493; /* Pink background on hover */
+  color: white; /* White text on hover */
+}  
+
+
+/* Close Button Styling */
+.close-overlay {
+  position: absolute;
+  top: 0px; /* Distance from the top of the overlay */
+  right: 0px; /* Distance from the right of the overlay */
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1010;
+}
+
+.close-overlay img {
+  width: 40px; /* Adjust size of the close button */
+  height: 40px;
+  border-radius: 50%;
+}
+
+.language-overlay .langbutton {
+  background-color: white; /* White background for buttons */
+  color: #ff1493; /* Pink text for buttons */
+  border: 1px solid #ff1493; /* Pink border */
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold; /* Make the text stand out */
+  width: 140px;
+  height: 50px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.language-overlay .langbutton:hover {
+  background-color: #ff1493; /* Pink background on hover */
+  color: white; /* White text on hover */
+}
+
+.message {
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 10px;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+.user-message {
+  background-color: #d1eaff;
+  color: #00509e;
+  align-self: flex-end;
+}
+
+.bot-message {
+  background-color: #ffe8e8;
+  color: #900c3f;
+  align-self: flex-start;
+}

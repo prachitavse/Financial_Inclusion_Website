@@ -1,0 +1,122 @@
+{
+    "HomeSection": {
+      "title": "महिला वित्त को सशक्त बनाएं, उसका भविष्य सशक्त बनाएं।",
+      "description": "आपका स्वागत है <b>सखी संगम</b> में, जो ग्रामीण समुदायों की महिलाओं को वित्तीय स्वतंत्रता प्राप्त करने में सशक्त बनाने के लिए समर्पित एआई-संचालित प्लेटफॉर्म है। हम जटिल वित्तीय दुनिया को सुलभता और उपयोग में आसानी के लिए डिज़ाइन किए गए उपकरणों और संसाधनों के साथ सरल बनाते हैं।",
+      "features": {
+        "learn": "स्मार्ट तरीके से सीखें: स्थानीय भाषाओं में गेमिफाइड पाठ।",
+        "plan": "बेहतर योजना बनाएं: बजट और लक्ष्य-आधारित योजना के लिए एआई उपकरण।",
+        "support": "सहायता पाएं: संरक्षकों और प्रेरणादायक उद्यमियों से जुड़ें।",
+        "accessible": "सुलभ रहें: 24/7 चैटबॉट और किसी भी समय सीखने के लिए ऑफलाइन कार्यक्षमता।"
+      }
+    },
+    "LearningPage": {
+      "selectOption": "विकल्प चुनें",
+      "options": {
+        "budgeting": "बजट बनाना",
+        "savings": "बचत",
+        "investment": "निवेश"
+      },
+      "tags": {
+        "savings": "एस-1",
+        "financialPlanning": "एफपी-1",
+        "loan": "एल-1"
+      },
+      "lessons": {
+        "savingsGuide": "बचत के लिए शुरुआती गाइड",
+        "startLesson": "पाठ शुरू करें",
+        "savingsDesc": "बचत गाइड",
+        "financialPlanning": "परिवारों के लिए वित्तीय योजना",
+        "loanManagement": "ऋण प्रबंधन"
+      },
+      "language": "भाषा"
+    },
+    "BudgetingPage":{
+      "budgeting_service": "बजट सेवा",
+      "monthly_income": "मासिक आय",
+      "monthly_savings": "मासिक बचत",
+      "monthly_expenses": "मासिक खर्च",
+      "travel": "यात्रा",
+      "commute": "आवागमन",
+      "personal": "व्यक्तिगत",
+      "education": "शिक्षा",
+      "seasonal": "मौसमी",
+      "loans": "ऋण",
+      "goals": "लक्ष्य",
+      "submit": "जमा करें",
+      "analysis_of_your_budget": "आपके बजट का विश्लेषण",
+      "out_of_budget_message": "यह बजट से बाहर है",
+      "total_expenses":"कुल खर्च",
+      "savings": "बचत",
+      "investment_suggestions": "निवेश सुझाव",
+      "please_fill_form_first": "कृपया पहले फॉर्म भरें!",
+      "language": "भाषा"
+    },
+    "QuizPage": {
+    "selectOption": "विकल्प चुनें",
+    "options": {
+      "budgeting": "बजट बनाना",
+      "savings": "बचत",
+      "investment": "निवेश"
+    },
+    "tags": {
+      "Q-1": "Q-1",
+      "Q-2": "Q-2",
+      "Q-3": "Q-3"
+    },
+    "lessons": {
+      "basicBudgetingQuiz": "बेसिक बजटिंग क्विज",
+      "savingsStrategiesQuiz": "बचत रणनीतियाँ क्विज़",
+      "investmentQuiz": "निवेश क्विज़"
+    },
+    "language": "भाषा",
+    "playButton": "खेलें"
+  },
+  "UserProfile": {
+    "profilePageTitle": "प्रोफ़ाइल पृष्ठ",
+    "editButton": "संपादित करें",
+    "saveButton": "सहेजें",
+    "rank": "रैंक",
+    "points": "अंक",
+    "quizzesCompleted": "पूरा किए गए क्विज़",
+    "badgesEarned": "प्राप्त बैज",
+    "courseProgressTitle": "कोर्स प्रगति",
+    "coursesCompleted": "पूरा किए गए कोर्स",
+    "ongoingCourse": "चल रहा कोर्स"
+  },
+  "Navbar": {
+    "logoAlt": "सखी संगम लोगो",
+    "home": "मुख्य पृष्ठ",
+    "learning": "सीखना",
+    "quizzesGames": "क्विज़/खेल",
+    "budgeting": "बजट बनाना",
+    "findYourMentor": "अपने संरक्षक को खोजें",
+    "profile": "प्रोफ़ाइल",
+    "profileAlt": "प्रोफ़ाइल",
+    "logout": "लॉगआउट",
+    "loginSignUp": "लॉगिन/साइन अप"
+  },
+  "Login": {
+    "imageAlt": "समुदाय",
+    "title": "लॉगिन",
+    "emailLabel": "ईमेल",
+    "emailPlaceholder": "अपना ईमेल दर्ज करें",
+    "passwordLabel": "पासवर्ड",
+    "passwordPlaceholder": "अपना पासवर्ड दर्ज करें",
+    "loginButton": "लॉगिन",
+    "signupLink": "खाता बनाएँ",
+    "forgotPasswordLink": "पासवर्ड भूल गए?"
+  },
+  "SignUp": {
+    "imageAlt": "समुदाय",
+    "title": "साइन अप करें",
+    "emailLabel": "ईमेल",
+    "emailPlaceholder": "अपना ईमेल दर्ज करें",
+    "passwordLabel": "पासवर्ड",
+    "passwordPlaceholder": "अपना पासवर्ड दर्ज करें",
+    "confirmPasswordLabel": "पासवर्ड की पुष्टि करें",
+    "confirmPasswordPlaceholder": "अपना पासवर्ड की पुष्टि करें",
+    "signUpButton": "साइन अप करें",
+    "backToLoginLink": "लॉगिन पर वापस जाएं"
+  }    
+  }
+  
