@@ -1,0 +1,38 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_profile\"}}]": "utter_ask_profile",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_profile\"}}, {\"prev_action\": {\"action_name\": \"utter_ask_profile\"}, \"user\": {\"intent\": \"ask_profile\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"services_of_sakhi_sangam\"}}]": "utter_services_of_sakhi_sangam",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"services_of_sakhi_sangam\"}}, {\"prev_action\": {\"action_name\": \"utter_services_of_sakhi_sangam\"}, \"user\": {\"intent\": \"services_of_sakhi_sangam\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_budgeting\"}}]": "utter_ask_budgeting",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_budgeting\"}}, {\"prev_action\": {\"action_name\": \"utter_ask_budgeting\"}, \"user\": {\"intent\": \"ask_budgeting\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"learn_about_sakhi_sangam\"}}]": "utter_about_sakhi_sangam",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"learn_about_sakhi_sangam\"}}, {\"prev_action\": {\"action_name\": \"utter_about_sakhi_sangam\"}, \"user\": {\"intent\": \"learn_about_sakhi_sangam\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"contact_info_sakhi_sangam\"}}]": "utter_contact_info_sakhi_sangam",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"contact_info_sakhi_sangam\"}}, {\"prev_action\": {\"action_name\": \"utter_contact_info_sakhi_sangam\"}, \"user\": {\"intent\": \"contact_info_sakhi_sangam\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"learn_basic_finance_knowledge\"}}]": "utter_basic_finance_knowledge",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"learn_basic_finance_knowledge\"}}, {\"prev_action\": {\"action_name\": \"utter_basic_finance_knowledge\"}, \"user\": {\"intent\": \"learn_basic_finance_knowledge\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"website_info_sakhi_sangam\"}}]": "utter_website_info_sakhi_sangam",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"website_info_sakhi_sangam\"}}, {\"prev_action\": {\"action_name\": \"utter_website_info_sakhi_sangam\"}, \"user\": {\"intent\": \"website_info_sakhi_sangam\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_learning\"}}]": "utter_ask_learning",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_learning\"}}, {\"prev_action\": {\"action_name\": \"utter_ask_learning\"}, \"user\": {\"intent\": \"ask_learning\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_quizzes_games\"}}]": "utter_ask_quizzes_games",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_quizzes_games\"}}, {\"prev_action\": {\"action_name\": \"utter_ask_quizzes_games\"}, \"user\": {\"intent\": \"ask_quizzes_games\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"learn_investment_strategies\"}}]": "utter_investment_strategies",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"learn_investment_strategies\"}}, {\"prev_action\": {\"action_name\": \"utter_investment_strategies\"}, \"user\": {\"intent\": \"learn_investment_strategies\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"greet\"}}]": "utter_greet",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"greet\"}}, {\"prev_action\": {\"action_name\": \"utter_greet\"}, \"user\": {\"intent\": \"greet\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_find_mentor\"}}]": "utter_ask_find_mentor",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_find_mentor\"}}, {\"prev_action\": {\"action_name\": \"utter_ask_find_mentor\"}, \"user\": {\"intent\": \"ask_find_mentor\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {},
+    "rules_not_in_stories": [
+      "predicting default action with intent restart",
+      "predicting default action with intent session_start",
+      "predicting default action with intent back"
+    ]
+  }
+}

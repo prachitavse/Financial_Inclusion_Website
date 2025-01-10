@@ -1,11 +1,37 @@
 version: "3.1"
 rules:
-  - rule: Say goodbye anytime the user says goodbye
+  - rule: Greet and provide info about Sakhi Sangam
     steps:
-      - intent: goodbye
-      - action: utter_goodbye
+      - intent: greet
+      - action: utter_greet
 
-  - rule: Respond to learn about investments
+  - rule: Respond to learn about Sakhi Sangam
     steps:
-      - intent: learn_finance
-      - action: utter_save_money_tips  # This will give tips on saving money
+      - intent: learn_about_sakhi_sangam
+      - action: utter_about_sakhi_sangam
+
+  - rule: Respond to services of Sakhi Sangam
+    steps:
+      - intent: services_of_sakhi_sangam
+      - action: utter_services_of_sakhi_sangam
+
+  - rule: Respond to contact info of Sakhi Sangam
+    steps:
+      - intent: contact_info_sakhi_sangam
+      - action: utter_contact_info_sakhi_sangam
+
+  - rule: Respond to website info of Sakhi Sangam
+    steps:
+      - intent: website_info_sakhi_sangam
+      - action: utter_website_info_sakhi_sangam
+
+  # New rules for learning about finance
+  - rule: Respond to basic finance knowledge query
+    steps:
+      - intent: learn_basic_finance_knowledge
+      - action: utter_basic_finance_knowledge
+
+  - rule: Respond to investment strategies query
+    steps:
+      - intent: learn_investment_strategies
+      - action: utter_investment_strategies

@@ -1,21 +1,45 @@
 version: "3.1"
 stories:
-  # - story: greet and learn finance (investment)
-  #   steps:
-  #     - intent: greet
-  #     - action: utter_greet
-  #     - intent: learn_finance
-  #     - action: action_provide_finance_education  # Learning about investments
-
-  - story: greet and learn finance (saving money)
+  - story: Greet and learn about Sakhi Sangam
     steps:
       - intent: greet
       - action: utter_greet
-      - intent: learn_finance
-      - action: utter_save_money_tips  # Tips on saving money
+      - intent: learn_about_sakhi_sangam
+      - action: utter_about_sakhi_sangam
 
-  - story: Goodbye interaction
+  - story: Learn services of Sakhi Sangam
     steps:
-      - intent: goodbye
-      - action: utter_goodbye
+      - intent: greet
+      - action: utter_greet
+      - intent: services_of_sakhi_sangam
+      - action: utter_services_of_sakhi_sangam
 
+  - story: Learn contact info of Sakhi Sangam
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: contact_info_sakhi_sangam
+      - action: utter_contact_info_sakhi_sangam
+
+  - story: Learn website info of Sakhi Sangam
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: website_info_sakhi_sangam
+      - action: utter_website_info_sakhi_sangam
+
+  # Story for learning basic finance knowledge
+  - story: Learn basic finance knowledge
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: learn_basic_finance_knowledge
+      - action: utter_basic_finance_knowledge
+
+  # Story for learning investment strategies
+  - story: Learn investment strategies
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: learn_investment_strategies
+      - action: utter_investment_strategies

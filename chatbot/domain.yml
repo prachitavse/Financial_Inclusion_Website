@@ -1,19 +1,38 @@
 version: "3.1"
 intents:
   - greet
-  - learn_finance
   - goodbye
+  - learn_about_sakhi_sangam
+  - services_of_sakhi_sangam
+  - contact_info_sakhi_sangam
+  - website_info_sakhi_sangam
+  - learn_basic_finance_knowledge
+  - learn_investment_strategies
 
 responses:
   utter_greet:
     - text: "Hello! How can I assist you today?"
-
-  utter_save_money_tips:
-    - text: "Here are some ways you can save money: Start budgeting, reduce unnecessary expenses, save on utilities, and avoid impulse purchases. Would you like more detailed advice?"
-
   utter_goodbye:
     - text: "Goodbye! Have a great day!"
 
-actions:
-  - action_provide_finance_education  # If you need this, keep it
+  utter_about_sakhi_sangam:
+    - text: "Sakhi Sangam is a community-driven initiative focused on empowering women and providing them with resources for personal growth and community support. It offers various programs and services to help women thrive."
 
+  utter_services_of_sakhi_sangam:
+    - text: "Sakhi Sangam offers various services including counseling, skill development workshops, and community engagement activities. For more details, you can visit our website."
+
+  utter_contact_info_sakhi_sangam:
+    - text: "You can contact Sakhi Sangam via phone at 123-456-7890 or by visiting our office at 123 Main St, Sakhi Nagar."
+
+  utter_website_info_sakhi_sangam:
+    - text: "You can find more information about Sakhi Sangam on our website: www.sakhisangam.org."
+
+  # New responses for basic finance knowledge
+  utter_basic_finance_knowledge:
+    - text: "Basic finance knowledge includes concepts like budgeting, saving, managing debt, and understanding financial goals. It helps individuals manage their personal finances and make informed decisions about their money."
+
+  utter_investment_strategies:
+    - text: "Investment strategies include options like stocks, bonds, real estate, and mutual funds. It's important to diversify your investments and consider your risk tolerance and financial goals before making decisions."
+  
+actions:
+  - action_provide_finance_education
