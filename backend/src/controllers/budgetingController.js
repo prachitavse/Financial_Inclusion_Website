@@ -7,10 +7,10 @@ exports.getBudgetPredictions = async (req, res) => {
     const { inputs } = req.body;
 
     // Validate inputs
-    if (!inputs || !Array.isArray(inputs) || inputs.length !== 9) {
+    if (!inputs || !Array.isArray(inputs) || inputs.length !== 13) {
       return res.status(400).json({
         status: 'error',
-        message: 'Invalid input. Expected an array of 9 values.',
+        message: 'Invalid input. Expected an array of 14 values.',
       });
     }
 

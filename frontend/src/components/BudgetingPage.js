@@ -47,15 +47,72 @@ const BudgetingPage = () => {
     setError("");
     setAnalysis(null);
 
+    // Prepare and validate inputs
     const inputs = Object.values(formData).map((value) =>
       isNaN(value) ? value : Number(value)
     );
+    const [
+      monthlyIncome,
+      monthlySavings,
+      travelExpense,
+      commuteExpense,
+      personalExpense,
+      educationExpense,
+      seasonalExpense,
+      loans,
+      goals,
+    ] = inputs;
+
+    // Check for required fields
+    if (
+      monthlyIncome <= 0 ||
+      monthlySavings <= 0 ||
+      travelExpense < 0 ||
+      commuteExpense < 0 ||
+      personalExpense < 0 ||
+      educationExpense < 0 ||
+      seasonalExpense < 0 ||
+      loans < 0 ||
+      goals <= 0
+    ) {
+      setError(t("BudgetingPage.validation_error"));
+      return;
+    }
+
+    // Add calculated fields
+    const savingsRate = monthlySavings / monthlyIncome;
+    const loanRatio = loans / monthlyIncome;
+    const timelineToGoal =
+      monthlySavings > 0 ? (goals - monthlySavings) / monthlySavings : 0;
+    const expenseSum =
+      travelExpense +
+      commuteExpense +
+      personalExpense +
+      educationExpense +
+      seasonalExpense;
+    const expenseAnomalies = expenseSum > 0.4 * monthlyIncome ? 1 : 0;
+
+    const finalInputs = [
+      monthlyIncome,
+      monthlySavings,
+      travelExpense,
+      commuteExpense,
+      personalExpense,
+      educationExpense,
+      seasonalExpense,
+      loans,
+      goals,
+      savingsRate,
+      loanRatio,
+      timelineToGoal,
+      expenseAnomalies,
+    ];
 
     try {
-      console.log("Sending inputs:", inputs); // Log inputs
+      console.log("Sending inputs:", finalInputs); // Log inputs
       const response = await axios.post(
         "http://localhost:3001/api/budgeting/predict",
-        { inputs, uid }
+        { inputs: finalInputs, uid }
       );
       console.log("Response received:", response.data); // Log response
       const output = response.data.predictions;
@@ -103,13 +160,19 @@ const BudgetingPage = () => {
           {error && <p className="error">{error}</p>}
           {analysis ? (
             <>
-              <p>{t("BudgetingPage.investment_suggestions")}: {analysis.investmentSuggestions}</p>
+              <p>
+                {t("BudgetingPage.investment_suggestions")}:{" "}
+                {analysis.investmentSuggestions}
+              </p>
               <p>
                 {t("BudgetingPage.policy_suggestions")}:{" "}
                 {Array.isArray(analysis.policySuggestions)
                   ? analysis.policySuggestions.join(", ")
                   : analysis.policySuggestions}
               </p>
+              <p>{t("BudgetingPage.goal_timeline")}: {analysis.goalTimeline}</p>
+              <p>{t("BudgetingPage.cluster_info")}: {analysis.clusterInfo}</p>
+              <p>{t("BudgetingPage.anomaly_status")}: {analysis.anomalyStatus}</p>
             </>
           ) : (
             <p>{t("BudgetingPage.please_fill_form_first")}</p>
