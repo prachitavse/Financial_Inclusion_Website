@@ -52,11 +52,12 @@ const BudgetingPage = () => {
     );
 
     try {
+      console.log("Sending inputs:", inputs); // Log inputs
       const response = await axios.post(
         "http://localhost:3001/api/budgeting/predict",
         { inputs, uid }
       );
-
+      console.log("Response received:", response.data); // Log response
       const output = response.data.predictions;
       localStorage.setItem(
         uid,
@@ -67,7 +68,8 @@ const BudgetingPage = () => {
       );
       setAnalysis(output);
     } catch (err) {
-      setError(t("BudgetingPage.fetch_error"));
+      console.error("Error fetching predictions:", err);
+      setError(err.response?.data?.message || t("BudgetingPage.fetch_error"));
     }
   };
 
@@ -101,14 +103,13 @@ const BudgetingPage = () => {
           {error && <p className="error">{error}</p>}
           {analysis ? (
             <>
-              <p>{t("BudgetingPage.travel")}: {analysis.travel}</p>
-              <p>{t("BudgetingPage.commute")}: {analysis.commute}</p>
-              <p>{t("BudgetingPage.personal")}: {analysis.personal}</p>
-              <p>{t("BudgetingPage.education")}: {analysis.education}</p>
-              <p>{t("BudgetingPage.seasonal")}: {analysis.seasonal}</p>
-              <p>{t("BudgetingPage.total_expenses")}: Rs {analysis.totalExpenses}</p>
-              <p>{t("BudgetingPage.savings")}: Rs {analysis.savings}</p>
-              <p>{t("BudgetingPage.investment_suggestions")}: {analysis.investmentSuggestions.join(", ")}</p>
+              <p>{t("BudgetingPage.investment_suggestions")}: {analysis.investmentSuggestions}</p>
+              <p>
+                {t("BudgetingPage.policy_suggestions")}:{" "}
+                {Array.isArray(analysis.policySuggestions)
+                  ? analysis.policySuggestions.join(", ")
+                  : analysis.policySuggestions}
+              </p>
             </>
           ) : (
             <p>{t("BudgetingPage.please_fill_form_first")}</p>

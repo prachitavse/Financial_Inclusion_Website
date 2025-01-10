@@ -7,11 +7,13 @@ const budgetingRoutes = require('./routes/budgeting');
 const app = express();
 
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: 'http://localhost:3000', // Your frontend URL
+}));
 app.use(bodyParser.json()); // Ensure the server can handle JSON requests
 
-app.use(chatbotRoutes);
-app.use(budgetingRoutes);
+app.use('/api/chatbot', chatbotRoutes);
+app.use('/api/budgeting', budgetingRoutes);
 
 app.use((err, req, res, next) => {
   console.error(err.stack);

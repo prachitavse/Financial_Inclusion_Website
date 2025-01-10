@@ -24,15 +24,16 @@ def predict():
         prediction1 = model1.predict(preprocessed_inputs)[0]
         prediction2 = model2.predict(preprocessed_inputs)[0]
         
-        improvement = LIST_MAPPINGS.get(prediction1, ["No suggestions available."])
-        policies = TRAVEL_MAPPINGS.get(prediction2, "No travel advice available.")
+        policy_suggestions = LIST_MAPPINGS.get(prediction1, ["No policy advice available."])
+        investment_suggestions = TRAVEL_MAPPINGS.get(prediction2, "No suggestions available.")
+        print(prediction2)
 
-        # Return predictions
+        # Return predictions with updated keys
         return jsonify({
             'status': 'success',
             'predictions': {
-                'list1': improvement,
-                'travelOption': policies
+                'policySuggestions': policy_suggestions,
+                'investmentSuggestions': investment_suggestions
             }
         })
     except Exception as e:

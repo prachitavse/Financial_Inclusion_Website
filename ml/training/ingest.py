@@ -2,7 +2,7 @@ import sqlite3
 import pandas as pd
 
 # Load CSV into a DataFrame
-data = pd.read_csv('data/MOCK_DATA.csv')
+data = pd.read_csv('./data/MOCK_DATA.csv')
 
 # Connect to SQLite
 connection = sqlite3.connect('database.db')
