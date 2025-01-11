@@ -3,6 +3,8 @@ import { useTranslation } from 'react-i18next';
 import './HomePage.css';
 import homeImage1 from '../assets/women_bg1.png';
 
+
+
 function HeroSection() {
   const { t } = useTranslation();
 

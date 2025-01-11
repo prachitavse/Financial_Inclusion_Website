@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@1..1000&display=swap');
 .home-section {
     display: flex;
     justify-content: space-between;
@@ -11,6 +14,26 @@
     flex: 1;
     justify-items: left;
     justify-content: left;
+  }
+
+  .home-text h1{
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-size: 50px;
+    font-style: italic;
+  }
+
+  .home-text p{
+    font-family: "Bad Script", serif;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .home-text ul{
+    font-family: "Ysabeau SC", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
   }
   
   .home-images {

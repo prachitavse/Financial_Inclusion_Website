@@ -61,7 +61,7 @@ function Chatbot() {
             ))}
           </div>
           <div className="chatbot-footer">
-            <button className="language-button" onClick={toggleLanguageOverlay}>
+            <button className="chatbot-language-button" onClick={toggleLanguageOverlay}>
               Language
             </button>
             {showLanguageOverlay && (

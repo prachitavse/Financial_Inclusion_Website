@@ -22,13 +22,16 @@
 
 .chatbot-window {
   width: 300px;
-  height: 300px;
+  height: 400px; /* Increased height for better usability */
   background: linear-gradient(135deg, #ff9aca, #ffa6b9);
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   position: fixed;
-  bottom: 120px;
-  right: 80px;
+  bottom: 100px; /* Space for footer */
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
 
 .chatbot-header {
@@ -50,30 +53,35 @@
   cursor: pointer;
 }
 
-.close-chatbot img{
-  width: 40px; /* Adjust size of the close button */
+.close-chatbot img {
+  width: 40px;
   height: 40px;
   border-radius: 50%;
 }
 
 .chatbot-body {
-  padding: 20px;
-  margin-top: -50px;
+  flex: 1; /* Takes up remaining space */
+  padding: 10px;
   font-family: Arial, sans-serif;
   font-size: 14px;
   color: #000;
+  overflow-y: auto; /* Adds scroll for messages */
 }
 
 .chatbot-footer {
-  margin-top: 70px;
   display: flex;
-  flex-direction: column;
+  align-items: center;
   gap: 10px;
   padding: 10px;
+  background-color: #ff9aca; /* Add background for better visibility */
+  border-top: 1px solid #ddd;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 .chatbot-input {
-  width: calc(100% - 20px);
+  flex: 1; /* Ensures input takes available space */
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 10px;
@@ -88,68 +96,33 @@
   padding: 8px 15px;
   font-size: 14px;
   cursor: pointer;
-  align-self: flex-end;
+  margin-right: 20px;
 }
 
-
 /* Language Button Styling */
-.language-button {
-  background-color: white; /* White background for buttons */
-  color: #ff1493; /* Pink text for buttons */
-  border: 1px solid #ff1493; /* Pink border */
+.chatbot-language-button {
+  position: absolute;
+  bottom: 70px; /* Place it above the footer */
+  right: 30px;
+  background-color: white;
+  color: #ff1493;
+  border: 1px solid #ff1493;
   border-radius: 5px;
   font-size: 18px;
   cursor: pointer;
   text-align: center;
-  font-weight: bold; /* Make the text stand out */
-  height: auto;
+  font-weight: bold;
   width: 100px;
-  align-self: end;
+  height: 40px;
   transition: background-color 0.3s, color 0.3s;
 }
 
 .language-button:hover {
-  background-color: #ff1493; /* Pink background on hover */
-  color: white; /* White text on hover */
-}  
-
-
-/* Close Button Styling */
-.close-overlay {
-  position: absolute;
-  top: 0px; /* Distance from the top of the overlay */
-  right: 0px; /* Distance from the right of the overlay */
-  background: none;
-  border: none;
-  cursor: pointer;
-  z-index: 1010;
+  background-color: #ff1493;
+  color: white;
 }
 
-.close-overlay img {
-  width: 40px; /* Adjust size of the close button */
-  height: 40px;
-  border-radius: 50%;
-}
-
-.language-overlay .langbutton {
-  background-color: white; /* White background for buttons */
-  color: #ff1493; /* Pink text for buttons */
-  border: 1px solid #ff1493; /* Pink border */
-  border-radius: 5px;
-  font-size: 18px;
-  cursor: pointer;
-  text-align: center;
-  font-weight: bold; /* Make the text stand out */
-  width: 140px;
-  height: 50px;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.language-overlay .langbutton:hover {
-  background-color: #ff1493; /* Pink background on hover */
-  color: white; /* White text on hover */
-}
-
+/* Message Bubble Styling */
 .message {
   margin-bottom: 10px;
   padding: 8px;
@@ -162,6 +135,7 @@
   background-color: #d1eaff;
   color: #00509e;
   align-self: flex-end;
+  margin-left: 30px;
 }
 
 .bot-message {
