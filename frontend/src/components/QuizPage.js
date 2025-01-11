@@ -1,3 +1,20 @@
+// META DATA - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+//
+// Developer Details:
+//     Name: Harshita Jangde
+//     Role: Frontend Developer
+//
+// Description:
+//     This page handles the quizzes and games section for the SakhiSangam platform, where users can participate in interactive quizzes and educational games.
+//     It dynamically fetches quizzes and displays them in a user-friendly format with timers, options, and feedback.
+//
+// Dependencies:
+//     - React useState Hook: For managing quiz data and tracking user selections
+//     - React Router (v6+): For routing to other sections like results and feedback
+//
+// Notes:
+//     Ensure that the quizzes are displayed in random order and maintain accessibility for users with visual impairments.
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 import React from 'react';
 import { useTranslation } from 'react-i18next'; // Import the translation hook

@@ -1,3 +1,30 @@
+// META DATA - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+// Developer Details:
+//     Name: Harshita Jangde 
+//     Role: Frontend Developer
+//     Name: Tanisha Priya
+//     Role: Backend Developer
+//     Description: 
+//         This React component implements a chatbot interface that allows users to communicate with an AI chatbot.
+//         It includes features such as opening and closing the chatbot window, sending messages, 
+//         displaying responses from the bot, and language selection for user interaction (English, Hindi, Marathi, Punjabi).
+//         It also handles the state management of the messages and user input dynamically.
+
+//     Dependencies:
+//         - React (for component structure and state management)
+//         - CSS (for styling the chatbot interface)
+//         - chatbotService (for sending and receiving messages from the backend chatbot API)
+//         - Images (for logo and close button used in the UI)
+//     - Key Features:
+//         - Toggle between open and closed chatbot window
+//         - Display messages sent by both user and bot
+//         - Language selection overlay to switch chatbot communication language
+//         - Input field to type and send messages to the chatbot
+//         - Handling user inputs and API responses dynamically
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
 import React, { useState } from 'react';
 import './Chatbot.css';
 import chatbotLogo from '../assets/chatbot-sign.jpg';

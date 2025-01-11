@@ -1,3 +1,20 @@
+// META DATA - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+//
+// Developer Details:
+//     Name: Harshita Jangde
+//     Role: Frontend Developer
+//
+// Description:
+//     The login page allows users to sign in to the SakhiSangam platform using their email and password.
+//     It includes form validation, email format checking, and redirection to the profile page upon successful login.
+//
+// Dependencies:
+//     - React useState Hook: For handling user input in the form
+//     - React Router (v6+): For routing users to their profile page upon login
+//
+// Notes:
+//     Ensure to provide proper feedback for invalid credentials and reset form inputs after each login attempt.
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 import React, { useState } from 'react';
 import './Login.css';
