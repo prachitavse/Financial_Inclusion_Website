@@ -1,3 +1,31 @@
+// META DATA - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+// Developer Details:
+//     Name: Harshita Jangde 
+//     Role: Fronted Developer
+//     Name: Prachi Tavse
+//     Role: Backend Developer
+//     Description: 
+//         This React component handles the budgeting page where users can input their financial data such as income, savings, expenses, and goals.
+//         It also calculates certain financial ratios, such as savings rate, loan ratio, and goal timeline, based on user inputs.
+//         The data is then sent to the backend for prediction and analysis, and the results are displayed to the user. 
+//         The page also features form validation and handles error messages related to missing or incorrect inputs. 
+
+//     Dependencies:
+//         - React (for component structure and state management)
+//         - axios (for making HTTP requests to the backend for financial predictions)
+//         - i18next (for multi-language support)
+//         - CSS (for styling the budgeting page)
+//     - Key Features:
+//         - User input fields for financial data (income, savings, expenses, etc.)
+//         - Data validation to ensure inputs are valid
+//         - HTTP request to send input data to the backend for predictions
+//         - Dynamic rendering of analysis results based on backend response
+//         - Display error messages in case of validation failures or backend errors
+//         - Local storage support for saving user data and analysis results
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";

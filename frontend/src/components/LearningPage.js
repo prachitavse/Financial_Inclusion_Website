@@ -1,3 +1,21 @@
+// META DATA - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+//
+// Developer Details:
+//     Name: Harshita Jangde
+//     Role: Frontend Developer
+//
+// Description:
+//     This page displays a list of learning modules available on the SakhiSangam platform, specifically tailored for rural women.
+//     The user can browse through courses, see progress, and enroll in new ones. 
+//     It also includes course details and recommendations based on completed courses.
+//
+// Dependencies:
+//     - React useState Hook: For managing dynamic course and progress data
+//     - React Router (v6+): For navigating between course details and other learning resources
+//
+// Notes:
+//     Make sure to dynamically update the progress bars and course status based on user interaction and data from the backend.
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 import React from 'react';
 import { useTranslation } from 'react-i18next';

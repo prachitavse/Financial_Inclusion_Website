@@ -1,3 +1,23 @@
+// META DATA - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+//
+// Developer Details:
+//     Name: Harshita Jangde
+//     Role: Frontend Developer
+//
+// Description:
+//     This React component renders the user's profile page for the SakhiSangam platform.
+//     It displays user-specific details such as username, email, rank, points, completed quizzes, badges, and course progress.
+//     It allows the user to edit their username dynamically and view progress using a circular progress bar.
+//
+// Dependencies:
+//     - React useState Hook: For managing dynamic user data and edit states
+//     - React Circular Progress Bar: For visualizing course progress
+//     - Stylesheet: UserProfile.css for component-specific styling
+//
+// Notes:
+//     When adding new user details or features, ensure consistency in the data structure.
+//     Future enhancements include integrating backend APIs to fetch and update user data in real-time.
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next'; // Import the translation hook

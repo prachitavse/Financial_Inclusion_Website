@@ -12,7 +12,7 @@ app.use(cors({
 }));
 app.use(bodyParser.json()); // Ensure the server can handle JSON requests
 
-app.use('/api/chatbot', chatbotRoutes);
+app.use(chatbotRoutes);
 app.use('/api/budgeting', budgetingRoutes);
 
 app.use((err, req, res, next) => {
