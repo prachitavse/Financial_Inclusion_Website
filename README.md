@@ -169,7 +169,9 @@ Financial_Inclusion_Website/
 |
 |── package.json             # Root package details
 |── README.md                # Project documentation
+```
 
+---
 
 # Future Enhancements
 
